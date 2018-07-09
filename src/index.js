@@ -47,6 +47,7 @@ class Plyr extends Component {
     onCaptionsDisabled: PropTypes.func,
 
     // plyr props
+    html: PropTypes.string,
     enabled: PropTypes.bool,
     title: PropTypes.string,
     debug: PropTypes.bool,
@@ -149,7 +150,8 @@ class Plyr extends Component {
 
     const options = {
       ...defaultOptions,
-      muted: this.state.muted
+      muted: this.state.muted,
+      html: this.props.html
     };
 
     const selector = `.${this.props.className.replace(/ /g, '.')}`

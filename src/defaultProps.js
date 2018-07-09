@@ -1,4 +1,7 @@
 const defaultProps = {
+  // HTML Hack
+  html: null,
+
   // Disable
   enabled: true,
 
